@@ -10,7 +10,18 @@
     <script type="text/babel">
         const appEl = document.querySelector('#app');
         const root = ReactDOM.createRoot(appEl);
-        root.render(<h1>こんにちは</h1>);
+        function Example() {
+            return <h1>Kazuki Chinone</h1>;
+        }
+        const Example1 = () => <h1>Kazuki Chinone arrow</h1>;
+        const Example2 = () => <p>hi</p>
+        root.render(
+            <div>
+            <Example />
+            <Example1 />
+            <Example2 />
+            </div>
+        );
     </script>
 </body>
 </html>
