@@ -4,11 +4,20 @@
 */
 
 import "./Child.css";
-
+const Anfn = (arg) => `${arg} Kazuki`
+const Nfn = (nfn) => `${nfn} Function`
+const Af = () => {
+  console.log('Af')
+}
 const Child = () => {
   return (
     <div className="component">
       <h3>式と文</h3>
+      <h3>{true ? 'Chinone' : 'Kazuki'}</h3>
+      <h3>{false ? 'Chinone' : 'Kazuki'}</h3>
+      {Anfn('Chinone')}
+      {Nfn('123')}
+      {Af()}
     </div>
   );
 };
